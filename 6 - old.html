@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+
+    
+<title>Research Statement</title>
+<style>
+    figcaption {
+        padding: 5px;
+        font-size: 0.85em;
+        border: none;
+        background: transparent;
+        word-wrap:normal;
+        text-align: center;
+    }
+</style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Guang Cheng</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="2.html">People</a></div>
+<div class="menu-item"><a href="1.html" class="current">Research</a></div>
+<div class="menu-item"><a href="3.html">Batmen meeting</a></div>
+<div class="menu-item">Data Science Seminar</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Research Summary</h1>
+</div>
+<p>
+Dr. Cheng's long term goal is to discover basic principles and develop new conceptual frameworks that are initially motivated by real practice in solving data science problems, and in turn provide guidance for better methodology or more efficient algorithms. 
+<p>
+This page summarizes Dr. Cheng's main contributions in mathematical statistics, high dimensional statistics and big data theory.
+<ul>
+<li> <font style="font-weight:bold">Mathematical Statistics</font>: Together with his collaborators, Dr. Cheng has established bootstrap consistency for general semiparametric models <a href="http://www.stat.purdue.edu/~chengg/Annals_3.pdf">(Cheng & Huang, 2010)</a>, developed a first set of local and global inference procedures for smoothing spline models <a href="http://www.stat.purdue.edu/~chengg/Smoothing_Spline.pdf">(Shang & Cheng, 2013)</a>, together with the corresponding nonparametric Bayesian inferences <a href="http://arxiv.org/abs/1411.3686">(Shang & Cheng, 2018).</a> The second work was established by inventing a new technical tool called as "functional Bahadur representation," and the third work rigorously proved that the “data washes out prior” phenomenon still exists in the nonparametric regime under a Bayesian version of “under-smoothing” condition.  All three representative works provide fundamental inferential theory in general semi- or non-parametric context;
+</li>
+
+<li> <font style="font-weight:bold">High Dimensional Statistics: </font>: Together with his collaborators, Dr. Cheng has developed Gaussian approximation results for high dimensional dependent data  <a href="http://arxiv.org/abs/1406.1037">(Zhang & Cheng, 2014</a> and <a href="http://www.stat.purdue.edu/~chengg/GP-Oct2016.pdf">Zhang & Cheng , 2018)</a>. A particularly important application is to make simultaneous inferences on high dimensional linear models <a href="http://arxiv.org/abs/1603.01295">(Zhang & Cheng, 2017)</a>;
+</li>
+
+<li> <font style="font-weight:bold">Big Data Theory</font>: Together with his collaborators, Dr. Cheng has characterized various statistical-and-computational tradeoffs arising from big data inference, e.g., distributed learning <a href="http://arxiv.org/abs/1512.09226">(Shang & Cheng, 2017)</a>, random projection <a href="https://arxiv.org/pdf/1802.06308.pdf">(Liu et al., 2018)</a> and early stopping <a href="https://arxiv.org/pdf/1805.09950.pdf">(Liu & Cheng, 2018)</a>. Moreover, Dr. Cheng has studied large dimensional random tensor, typically big data, in particular sparse tensor decomposition <a href="http://arxiv.org/abs/1502.01425">(Sun et al., 2017)</a> and tensor recovery <a href="https://arxiv.org/abs/1801.09326">(Hao et al., 2018)</a>.
+</li>
+
+</ul>
+</p>
+<p>
+<font style="font-weight:bold">Deep Learning</font> is a new research area to Dr. Cheng. As a first try, he attemps to turn the well known generative adversarial network (GAN) in DL into statistical sampling procedures <a href="https://arxiv.org/pdf/1810.03545.pdf">Hu et al. (2018)</a>.
+</p>
+
+
+<h2>Big Data Theory (2013 -- 2018, After-tenure)</h2>
+<p>
+Dr. Cheng has expanded his research program to big data after participating the year-long Massive Data program at SAMSI. The goal of big data theory is to carry out theoretical analyses, e.g., inferential theory, of algorithms relevant to big data practice for insight and guidance. The theoretical training in mathematical statistics, e.g., empirical processes, prepared him very well for studying machine learning tools, e.g., concentration inequalities, needed in big data theory.
+</p>
+
+<h3>Statistical-and-Computational Trade-off</h3>
+<p>
+The increased availability of massive data sets significantly helps discover subtle patterns in their distributions, but also imposes overwhelming computational challenges. A question of practical relevance is how one should allocate a limited computational budget to obtain the best possible statistically-based solution. This requires a <em>sharp</em> characterization of statistical-and-computational trade-off as Dr. Cheng did in distributed learning <a href="http://arxiv.org/abs/1512.09226">Shang & Cheng (2017)</a>; random projection <a href="https://arxiv.org/pdf/1802.06308.pdf">Liu et al. (2018)</a>; early stopping <a href="https://arxiv.org/pdf/1805.09950.pdf">Liu & Cheng (2018)</a>.
+</p>
+<p>
+We use the divide-and-conquer algorithm for smoothing spline as a prototypical example to illustrate our contributions. As a first work, <a href="http://arxiv.org/abs/1512.09226">Shang & Cheng (2017)</a> discovered a phase transition phenomenon for the number of distributed computing units that ends up being a simple proxy for computing cost. Specifically, a  sharp upper bound for the number of deployed machines is established: when the number is below this bound, statistical optimality (in terms of estimation or testing) is achievable; otherwise, statistical optimality becomes impossible. These sharp bounds partly capture intrinsic computational limits of the distributed algorithm from a statistical perspective. An even deeper insight is that sample splitting may be viewed as an alternative form of regularization, playing a similar role as smoothing parameter. Please see Figure <a href="#f1">1</a> for an illustration of this point, which further motivates the optimal tuning procedure in the distributed learning framework <a href="http://proceedings.mlr.press/v80/xu18f.html">Xu et al. (2018)</a>. The above insights obtained from regression are rather different from those in the classification problems. In the case of nearest neighbor classification, <a href="">Duan et al. (2018)</a> proved that there exists an intrinsic regret loss in terms of multiplicative constant even under the optimal majority voting; see the right plot of Figure <a href="#f1">1</a>. This loss can only be removed by invoking the more subtle weighted voting.
+</p>
+<figure align="middle" id="f1">
+<img src="sharps_estimation.png" height="250">
+<img src="sharps_testing.png" height="250">
+<img src="Slides_Q_prime_VS_d.png" height="250">
+    <figcaption>Figure 1: <a href="http://arxiv.org/abs/1512.09226">Shang & Cheng (2017)</a> considered estimation and testing of $f$ in $Y=f(X)+\epsilon$ via divide-and-conquer algorithm. Define $N$, $\lambda$ and $s$ as the entire sample size, smoothing parameter used in each machine and the total number of machines, respectively. Two lines indicate the choices of $s\asymp N^a$ and $\lambda\asymp N^{-b}$, leading to minimax optimal estimation rate (left) and minimax optimal testing rate (middle). Whereas $(a,b)$'s outside these two lines lead to suboptimal rates. Right plot characterizes the multiplicative loss $Q_{\mbox{prime}}$ versus data dimension $d$.<figcaption>
+</figure>
+<p>
+The statistical-and-computational tradeoff phenomenon has also been observed in the random projection method <a href="https://arxiv.org/pdf/1802.06308.pdf">Liu et al. (2018)</a> and early stopping method <a href="https://arxiv.org/pdf/1805.09950.pdf">Liu & Cheng (2018)</a> in terms of the minimal surrogate dataset (after random projection) and the optimal number of iterations, respectively. Please see Figure <a href="#f2">2</a>.
+</p>
+<figure align="middle" id="f2">
+<img src="phase_tran.png" height="250">
+<img src="est_test.png" height="250">
+<figcaption>Figure 2: <a href="https://arxiv.org/pdf/1802.06308.pdf">Liu et al. (2018)</a> considered nonparametric testing for $f$ in $Y=f(X)+\epsilon$ via random projection. The horizontal axis $\lambda$ is the smoothing parameter used in kernel ridge regression, and the vertical axis $s$ is the size of surrogate dataset. SWDS means the strength of the weakest detectable signals. The vertical line labeled by &ldquo;optimal&rdquo; indicates the choices of $\lambda$ and the corresponding smallest sample size $s^*$ that achieve the smallest SWDS. The right plot illustrates different &ldquo;bias-variance&rdquo; tradeoff in testing and estimation, thus leading to different stopping time: $\widetilde T$ v.s. $T^*$ <a href="https://arxiv.org/pdf/1805.09950.pdf">Liu & Cheng (2018)</a>.<figcaption>
+</figure>
+
+<h3>High Dimensional Data Analysis</h3>
+<p>
+Dr. Cheng has made three contributions in high dimensional inferences: simultaneous inference for high dimensional linear models <a href="http://arxiv.org/abs/1603.01295">Zhang & Cheng (2017)</a>; Gaussian approximation result for high dimensional time series data <a href="http://arxiv.org/abs/1406.1037">Zhang & Cheng (2014)</a> and <a href="http://www.stat.purdue.edu/~chengg/GP-Oct2016.pdf">Zhang & Cheng (2018)</a>; minimax optimal estimation for high dimensional semiparametric models <a href="https://arxiv.org/abs/1612.05906">Yu et al. (2018)</a>.
+</p>
+<p>
+Among the three, the best known work is perhaps <a href="http://arxiv.org/abs/1603.01295">Zhang & Cheng (2017)</a> that proposed a bootstrap-assisted procedure to conduct simultaneous inference for high dimensional sparse linear models. Despite the minimax optimality even under non-Gaussian setup, the proposed procedure allows the dimension of the parameter vector of interest to be exponentially larger than sample size, and it automatically accounts for the dependence within the de-sparsifying Lasso estimator.
+</p>
+<p>
+A minimax rate result obtained in <a href="https://arxiv.org/abs/1612.05906">Yu et al. (2018)</a> revealed an &ldquo;one-way interaction phenomenon&rdquo; in estimating high dimensional partially linear additive models. Specifically, minimax risk for smooth nonparametric estimation can be slowed down to the sparse estimation rate whenever the smoothness of the nonparametric component or dimensionality of the parametric component is sufficiently large. The phase transition diagram is demonstrated in Figure <a href="#f3">3</a> below.
+</p>
+<figure align="middle" id="f3">
+<img src="plot.png" height="250">
+<figcaption>Figure 3: <a href="https://arxiv.org/abs/1612.05906">Yu et al. (2018)</a> considered estimating $Y=X'\beta_0+f_0(Z)+g_0(U)+\epsilon$, where $\beta_0\in\mathbb R^p$ with at most $s_0$ non-zero elements and the smoothness of $f_0$ is $\alpha$. The minimax lower bound for estimating $f_0$ is $n^{-\alpha/(2\alpha+1)}$ when $\alpha, p, s_0$ and $n$ fall into smooth regime. Otherwise, the minimax lower bound becomes $s_0\log(p/s_0)/n$ in the sparse regime.<figcaption>
+</figure>
+    
+<h3>Big Tensor Data</h3>
+<p>
+Tensor data is a particular type of big data Dr. Cheng has investigated in depth. A common difficulty in tensor algorithms is their low computational efficiency due to large size of memory storage and unknown parameters. For example, a single high quality image stored in 32 bit color format would take 192 Mbytes of size $8000\times6000\times4$. These real data motivate recent works on  estimating tensor-variate graph <a href="http://www.stat.purdue.edu/~chengg/Tlasso_nips2015.pdf">Sun et al. (2015)</a>, sparse tensor decomposition <a href="http://arxiv.org/abs/1502.01425">Sun et al. (2017)</a> and tensor recovery <a href="https://arxiv.org/abs/1801.09326">Hao et al. (2018)</a>.
+</p>
+<p>
+As a feature work, <a href="https://arxiv.org/abs/1801.09326">Hao et al. (2018)</a> will be discussed here. Tensor recovery aims to recover an unknown tensor $\mathcal{B}$ from different types of sketchings. Specifically, we consider a general model
+\begin{eqnarray*}
+\label{model}
+y_i = \langle\mathcal{B}, \mathcal{X}_i\rangle+\epsilon_i, \ i=1,\ldots, n,
+\end{eqnarray*}
+where $\mathcal{X}_i$ is an observable sketching tensor with either symmetric or non-symmetric form. The sketching tensor $\mathcal{X}_i$ is imposed a nice structure as an outer product of three random Gaussian vectors. In detail, the non-symmetric one has the form of $\bf{u}_i\circ \bf{v}_i\circ \bf{w}_i$, while the symmetric one has the form of $\bf{x}_i\circ \bf{x}_i\circ \bf{x}_i$. The former corresponds to compressed measurements for high-order tensor data and the latter to a tensor representation of high-order interaction; see Figure <a href="#f4">4</a> for illustration. By imposing the low rank structure of $\mathcal{B}$, we sketch the tensor along three different modes individually, which leads to the &ldquo;cubic sketching&rdquo; method.
+The sparsity of iterative estimate is guaranteed by the tensor truncated power method introduced in <a href="http://arxiv.org/abs/1502.01425">Sun et al. (2017)</a>. Based on tensor concentration inequalities, we prove that the block-wise gradient descent estimate converges to global optima with a geometric rate in optimization error and minimax optimal rate in statistical error.
+</p>
+<figure align="middle" id="f4">
+<img src="illustration.png" height="250">
+<img src="3.png" height="250">
+<figcaption>Figure 4: Illustration for tensor image compressing and interaction reformulation.<figcaption>
+</figure>
+
+<h2>Deep Learning (2017 -- Present)</h2>
+<p>
+Dr. Cheng has become interested in deep learning after participating one-week tutorial by Ruslan Salakhutdinov given at Simons institute. This is an entirely new area to Dr. Cheng. His strategy for moving into this area is to either develop more statistical flavored deep learning tools such as sampling <a href="https://arxiv.org/pdf/1810.03545.pdf">Hu et al. (2018)</a>, or understand some deep learning phenomenon using toy examples such as shallow neural network or even simple nonparametric models <a href="https://arxiv.org/pdf/1810.02814.pdf">Xing et al. (2018)</a>. At a high level, Dr. Cheng is seeking either an approximate answer to the right problem or an exact answer to an approximate problem<sup><a href="#fn1" id="ref1">1</a></sup> at this stage. Things might become clear after years of trials and (necessarily) failures.
+</p>
+
+<h3>Stein Neural Sampler</h3>
+<p>
+The goal of <a href="https://arxiv.org/pdf/1810.03545.pdf">Hu et al. (2018)</a> is to turn generative adversarial network (GAN) into a sampling procedure. Such a GAN-based method takes advantage of the large capacity of neural network, which ideally produces better empirical performance than MCMC, esp in high dimension or multi-modal situations. Specifically, two novel samplers are proposed to produce high-quality samples from a given (un-normalized) probability density. The sampling is achieved by transforming a reference distribution to the target distribution with neural networks,  which are trained separately by minimizing two kinds of Stein discrepancies, and hence our method is named as Stein neural sampler. Theoretical and empirical results suggest that, compared with traditional sampling  schemes, our samplers are asymptotically correct, experience less convergence issue and generating samples instantaneously. Please see Figure <a href="#f5">5</a> for a simple comparison with other competing methods.
+</p>
+<figure align="middle" id="f5">
+<img src="8Gaussian.png" height="250">
+<figcaption>Figure 5: 2D Gaussian mixture with 8 components. The red dashed lines are the target density and the green dots are generated samples at 0, 1000, 2000, 5000, 10000 iterations, respectively.<figcaption>
+</figure>
+
+<h3>Interpreting Over-fitting Phenomenon</h3>
+<p>
+In deep learning, it is observed that carefully designed deep neural networks achieve small testing error even the training error is close to zero. One possible explanation is that for many modern machine learning algorithms, over-fitting can greatly reduce the estimation bias, while not increase the estimation variance too much. <a href="https://arxiv.org/pdf/1810.02814.pdf">Xing et al. (2018)</a> tried to understand this over-fitting phenomenon using the simple nearest neighbor algorithms under the interpolation constraint; see the left panel of Figure <a href="#f6">6</a>. Specifically, it was proven that such interpolated algorithms can still achieve the minimax optimal rate in both regression and classification regimes as long as weights are carefully chosen. More interestingly, we observe that the interpolated algorithms are empirically better than the traditional $k$-nearest neighbor method in quite a few scenarios; see the right panel of Figure <a href="#f6">6</a>. This empirical advantage might be explained by a smaller multiplicative constant before the minimax rate.
+</p>
+<figure align="middle" id="f6">
+<img src="toy_cut.png" height="250">
+<img src="class.png" height="250">
+    <figcaption>Figure 6: In the left plot, $\phi(t)$ represents the weight function in the nearest neighbor regression estimate. In the right plot for classifying $N(0, I_5)$ v.s. $N(\gamma 1, I_5)$, solid line and dashed line represent the optimal excess risk for classification of $k$-NN and interpolated-NN, respectively.<figcaption>
+</figure>
+
+
+<sup id="fn1">1. According to John Tukey, the former seems better, though.<a href="#ref1">↩</a></sup>
+
+
+<div id="footer">
+<div id="footer-text">
+Page generated 2015-02-08 22:06:31 CDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10281527; 
+var sc_invisible=1; 
+var sc_security="a2695fea"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/10281527/0/a2695fea/0/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
